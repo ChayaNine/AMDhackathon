@@ -408,7 +408,7 @@ def run_training(args) -> None:
     trainer.save_model(str(best_dir))
     tokenizer.save_pretrained(str(best_dir))
     print(f"\nCheckpoint saved to {best_dir}")
-    print(f"Upload to HF Hub: huggingface-cli upload nawman0209/rifttune-7b {best_dir} .")
+    print(f"Upload to HF Hub: huggingface-cli upload Chayanine/rifttune-7b {best_dir} .")
 
     api_names = load_api_names()
     if api_names:
